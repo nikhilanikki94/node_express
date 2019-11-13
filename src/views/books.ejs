@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nikhila</title>
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: rgb(226, 221, 221)">
+        <nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: rgb(5, 5, 92)">
+
+                <ul class="navbar-nav">
+                    
+                      <%for(var i=0;i<nav.length;i++){%>
+                          <li class="nav-item active">
+                        <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].title%></a>
+                    <!-- <li class="nav-item active">
+                        <a  class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact.html">CONTACT</a></li>
+                   
+                        
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="login.html" style="text-align: center;"><b>LOGIN</b></a>
+                        </li>
+                        <li class="nav-item active">
+                                <a class="nav-link" href="signupp.html"><b>SIGN UP</b></a> -->
+                              </li>
+                              <%}%>
+                        </ul>
+            </nav>
+            <div class="jumbotron jumbotron-fluid " style="background-color: rgb(3, 3, 58)">
+                    <div class="container row" style="padding-left: 8%;">
+                      <h1 class=" col-lg-8 col-sm-8" style="color: white;font-size: 300%; font-family:Georgia, 'Times New Roman', Times, serif"> <b><%=title%></b></h1>  
+                      <div class="col-lg-4 col-sm-4 " style="  background-color: rgb(15, 8, 110); border-radius: 5px; height:70px;margin-left: 85%; margin-top: -6%;">
+
+                      </div>    
+                    </div>  
+                  </div>
+                  <div class="container" style="display:flex;flex-direction:row;  background-color: rgb(255, 253, 253);border-radius:5px; padding:40px; margin-top:-5%">
+                       <div class="  col-lg-6 container" >
+                         <%for(var i=0;i<books.length;i++){%>
+                             
+
+                                <h3><%=books[i].title%></h3> 
+                             
+                                 <h4><%=books[i].genre%></h4>
+                                <h5> <%=books[i].author%></h5>
+                                <a href="/books/<%=i%>">Read More</a>
+                         <%}%>
+                        </div></div>
+                        
+                </div>
+            
+</body>
+</html>
